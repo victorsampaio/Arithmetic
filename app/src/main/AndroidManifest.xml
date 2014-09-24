@@ -17,8 +17,24 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".SumActivity"
+            android:name=".operations.FourOperations"
+            android:label="@string/title_activity_four_operations" >
+        </activity>
+        <activity
+            android:name=".operations.sum.SumActivity"
             android:label="@string/title_activity_sum" >
+        </activity>
+        <activity
+            android:name=".operations.subtraction.SubtractionActivity"
+            android:label="@string/title_activity_subtraction" >
+        </activity>
+        <activity
+            android:name=".operations.division.DivisionActivity"
+            android:label="@string/title_activity_division" >
+        </activity>
+        <activity
+            android:name=".operations.multiplication.MultiplicationActivity"
+            android:label="@string/title_activity_multiplication" >
         </activity>
     </application>
 

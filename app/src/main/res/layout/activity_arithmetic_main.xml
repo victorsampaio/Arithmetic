@@ -25,4 +25,32 @@
         android:layout_below="@+id/textView"
         android:layout_alignParentStart="true"
         android:layout_marginTop="52dp" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Subtraction"
+        android:id="@+id/btnSubtraction"
+        android:layout_alignBottom="@+id/btnSum"
+        android:layout_toEndOf="@+id/btnSum" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Division"
+        android:id="@+id/btnDivision"
+        android:layout_alignBottom="@+id/btnSubtraction"
+        android:layout_alignStart="@+id/textView" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Multiplication"
+        android:id="@+id/btnMultiplication"
+        android:layout_alignBottom="@+id/btnDivision"
+        android:layout_toEndOf="@+id/btnDivision" />
+
 </RelativeLayout>

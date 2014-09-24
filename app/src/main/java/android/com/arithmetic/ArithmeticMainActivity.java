@@ -1,35 +1,52 @@
 package android.com.arithmetic;
 
 import android.app.Activity;
+import android.app.ListActivity;
+import android.com.arithmetic.operations.FourOperations;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.View.OnClickListener;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.ListView;
 
+public class ArithmeticMainActivity extends ListActivity{
+    private static final String CATEGORY = "arithmeticMenu";
 
+    private static final String[] topic = new String[] {"1 - Operations(Add, Subt, Div, Mult) ", "2 - Geometry ", "3 - Trigonometry", "4 - Exit "};
 
-
-public class ArithmeticMainActivity extends Activity implements OnClickListener{
-    Button sumA;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_arithmetic_main);
+        //setContentView(R.layout.activity_arithmetic_main);
 
-
-        sumA = (Button)findViewById(R.id.btnSum);
-        sumA.setOnClickListener(this);
+        this.setListAdapter(new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, topic));
 
     }
 
     @Override
-    public void onClick(View v) {
-        Intent itSum = new Intent(this,SumActivity.class);
-        startActivity(itSum);
-    }
+    protected void onListItemClick(ListView l, View v, int position, long id){
+        switch (position){
+            case 0:
+                   startActivity(new Intent(this, FourOperations.class));
+                break;
+            case 1:
+                startActivity(new Intent(this, FourOperations.class));
+                break;
+            case 2:
+                startActivity(new Intent(this, FourOperations.class));
+                break;
+            case 3:
+                startActivity(new Intent(this, FourOperations.class));
+                break;
+            default:
+                finish();
+        }
+    };
+
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {

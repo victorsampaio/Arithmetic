@@ -5,5 +5,9 @@
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
     <string name="title_activity_sum">SumActivity</string>
+    <string name="title_activity_four_operations">FourOperations</string>
+    <string name="title_activity_subtraction">SubtractionActivity</string>
+    <string name="title_activity_division">DivisionActivity</string>
+    <string name="title_activity_multiplication">MultiplicationActivity</string>
 
 </resources>

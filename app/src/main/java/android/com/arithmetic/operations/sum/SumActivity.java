@@ -1,20 +1,19 @@
-package android.com.arithmetic;
+package android.com.arithmetic.operations.sum;
 
 import android.app.Activity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.com.arithmetic.R;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
-import android.widget.Toast;
-
 
 public class SumActivity extends Activity {
-    private static final String CATEGORY = "SOMA";
+    private static final String CATEGORY = "operationSum";
 
     TextView view;
     Button btnSum;
@@ -24,27 +23,22 @@ public class SumActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sum);
 
-       // view = (TextView)findViewById(R.id.view);
-        // gets numbers
-        //number1 = new EditText(this);
-       // number2 = new EditText(this);
-       // Log.i(CATEGORY, "EditText ok ");
         btnSum = (Button)findViewById(R.id.btSum);
         btnSum.setOnClickListener(btnListener);
         Log.i(CATEGORY, "OnClickListener ok ");
     }
-
     private OnClickListener btnListener = new OnClickListener() {
         @Override
         public void onClick(View v) {
-            operation();
+            sumOperation();
         }
     };
 
-    private void operation() {
-    EditText etNum1 = (EditText)findViewById(R.id.firstNumber);
+    // Operation
+    private void sumOperation() {
+        EditText etNum1 = (EditText)findViewById(R.id.firstNumber);
         Log.i(CATEGORY, "EditText 1 ok ");
-    EditText etNum2 = (EditText)findViewById(R.id.secondNumber);
+        EditText etNum2 = (EditText)findViewById(R.id.secondNumber);
         Log.i(CATEGORY, "EditText 2 ok ");
         int n1 = Integer.parseInt(etNum1.getText().toString());
         Log.i(CATEGORY, "int n1 ok ");
@@ -52,12 +46,10 @@ public class SumActivity extends Activity {
         Log.i(CATEGORY, "int n2 ok ");
         int result = n1 + n2;
         Log.i(CATEGORY, "result ok " + result);
-
         TextView msg = (TextView)findViewById(R.id.view);
         msg.setText("Result: " + result );
         Log.i(CATEGORY, "Message Result ok ");
     }
-
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
