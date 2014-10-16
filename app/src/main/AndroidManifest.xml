@@ -36,6 +36,18 @@
             android:name=".operations.multiplication.MultiplicationActivity"
             android:label="@string/title_activity_multiplication" >
         </activity>
+        <activity
+            android:name=".operations.sum.CalculateAddition"
+            android:label="@string/title_activity_calculate_addition" >
+        </activity>
+        <activity
+            android:name=".operations.sum.ExerciseAddition"
+            android:label="@string/title_activity_exercise_addition" >
+        </activity>
+        <activity
+            android:name=".operations.sum.VideoClassAddActivity"
+            android:label="@string/title_activity_video_class_add" >
+        </activity>
     </application>
 
 </manifest>

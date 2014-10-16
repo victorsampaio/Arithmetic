@@ -12,7 +12,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Arithmetic"
-        android:id="@+id/textView"
+        android:id="@+id/textViewAdd"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true" />
 
@@ -22,7 +22,7 @@
         android:layout_height="wrap_content"
         android:text="Sum"
         android:id="@+id/btnSum"
-        android:layout_below="@+id/textView"
+        android:layout_below="@+id/textViewAdd"
         android:layout_alignParentStart="true"
         android:layout_marginTop="52dp" />
 
@@ -42,7 +42,7 @@
         android:text="Division"
         android:id="@+id/btnDivision"
         android:layout_alignBottom="@+id/btnSubtraction"
-        android:layout_alignStart="@+id/textView" />
+        android:layout_alignStart="@+id/textViewAdd" />
 
     <Button
         style="?android:attr/buttonStyleSmall"

@@ -9,5 +9,8 @@
     <string name="title_activity_subtraction">SubtractionActivity</string>
     <string name="title_activity_division">DivisionActivity</string>
     <string name="title_activity_multiplication">MultiplicationActivity</string>
+    <string name="title_activity_calculate_addition">CalculateAddition</string>
+    <string name="title_activity_exercise_addition">ExerciseAddition</string>
+    <string name="title_activity_video_class_add">VideoClassAddActivity</string>
 
 </resources>
