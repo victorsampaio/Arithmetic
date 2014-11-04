@@ -11,7 +11,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
-public class DivisionActivity extends Activity {
+public class CalculateDivisionActivity extends Activity {
     private static final String CATEGORY = "operationDiv";
 
     TextView view;
@@ -20,9 +20,9 @@ public class DivisionActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_division);
+        setContentView(R.layout.activity_calculate_division);
 
-        btnDiv = (Button)findViewById(R.id.btnDivision);
+        btnDiv = (Button)findViewById(R.id.btnAddition);
         btnDiv.setOnClickListener(btnListener);
         Log.i(CATEGORY, "OnClickListener ok ");
     }
@@ -35,9 +35,9 @@ public class DivisionActivity extends Activity {
 
     // Operation
     private void divOperation() {
-        EditText etNum1 = (EditText)findViewById(R.id.firstNumD);
+        EditText etNum1 = (EditText)findViewById(R.id.firstNumAdd);
         Log.i(CATEGORY, "EditText 1 ok ");
-        EditText etNum2 = (EditText)findViewById(R.id.secondNumD);
+        EditText etNum2 = (EditText)findViewById(R.id.secondNumAdd);
         Log.i(CATEGORY, "EditText 2 ok ");
         int n1 = Integer.parseInt(etNum1.getText().toString());
         Log.i(CATEGORY, "int n1 ok ");

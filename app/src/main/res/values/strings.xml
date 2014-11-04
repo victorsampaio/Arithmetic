@@ -12,5 +12,17 @@
     <string name="title_activity_calculate_addition">CalculateAddition</string>
     <string name="title_activity_exercise_addition">ExerciseAddition</string>
     <string name="title_activity_video_class_add">VideoClassAddActivity</string>
+    <string name="title_activity_my">MyActivity</string>
+    <string name="title_activity_subtraction_main">SubtractionMainActivity</string>
+    <string name="title_activity_exercise_subtraction_main">ExerciseSubtractionMainActivity</string>
+    <string name="title_activity_video_subtraction">VideoSubtractionActivity</string>
+    <string name="title_activity_video_multiplication">VideoMultiplicationActivity</string>
+    <string name="title_activity_video_division">VideoDivisionActivity</string>
+    <string name="title_activity_exercise_division">ExerciseDivisionActivity</string>
+    <string name="title_activity_exercise_multiplication_actvity">ExerciseMultiplicationActvity</string>
+    <string name="title_activity_multiplication_main">MultiplicationMainActivity</string>
+    <string name="title_activity_division_main">DivisionMainActivity</string>
+    <string name="title_activity_addition_main">AdditionMainActivity</string>
+    <string name="title_activity_video_class_addition">VideoClassAdditionActivity</string>
 
 </resources>

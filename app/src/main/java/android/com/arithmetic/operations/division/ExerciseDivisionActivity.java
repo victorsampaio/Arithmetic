@@ -1,4 +1,4 @@
-package android.com.arithmetic.operations.sum;
+package android.com.arithmetic.operations.division;
 
 import android.app.Activity;
 import android.os.Bundle;
@@ -11,45 +11,41 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
-public class ExerciseAddition extends Activity implements OnClickListener{
+public class ExerciseDivisionActivity extends Activity implements OnClickListener{
 
-    Button btExerc;
+    Button btResult;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_exercise_addition);
+        setContentView(R.layout.activity_exercise_division);
 
-
-        btExerc = (Button)findViewById(R.id.btnResultExerc);
-        btExerc.setOnClickListener(this);
-
+        btResult = (Button)findViewById(R.id.btnResultExerc);
+        btResult.setOnClickListener(this);
     }
 
     @Override
     public void onClick(View v) {
+
+        //Question 1
         try {
-            EditText r1 = (EditText)findViewById(R.id.r1);
-            TextView result1 = (TextView)findViewById(R.id.txtR1);
-            int rs1 = Integer.parseInt(r1.getText().toString());
-            int res1 = 4;
-            if (rs1 == 4){
-
+            EditText rs1 = (EditText)findViewById(R.id.r1);
+            TextView result1 = (TextView)findViewById(R.id.resul1);
+            int res1 = Integer.parseInt(rs1.getText().toString());
+            if (res1 == 3){
                 result1.setText("CORRECT");
-            } else {
-                result1.setText("Result is: " + res1);
+            }else {
+                result1.setText("ERROR. Result is 3");
             }
-
 
         }catch (Exception e){
             e.getMessage();
         }
-
     }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.exercise_addition, menu);
+        getMenuInflater().inflate(R.menu.exercise_division, menu);
         return true;
     }
 

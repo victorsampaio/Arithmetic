@@ -11,7 +11,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
-public class SubtractionActivity extends Activity {
+public class SubtractionCalculateActivity extends Activity {
     private static final String CATEGORY = "operationSub";
 
     TextView view;
@@ -20,7 +20,7 @@ public class SubtractionActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_subtraction);
+        setContentView(R.layout.activity_calculate_subtraction);
 
         btnSub = (Button)findViewById(R.id.btnSubtract);
         btnSub.setOnClickListener(btnListener);

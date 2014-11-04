@@ -1,0 +1,77 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="android.com.arithmetic.operations.SumActivity">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Division"
+        android:id="@+id/textViewAdd"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calc"
+        android:id="@+id/btnCalcAdd"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Exercise"
+        android:id="@+id/btnExerciseAdd"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageViewAdd"
+        android:layout_toStartOf="@+id/btnExerciseAdd"
+        android:src="@drawable/division_cartoon"
+        android:layout_below="@+id/textViewAdd"
+        android:layout_alignEnd="@+id/scrollView2"
+        android:layout_alignParentStart="true" />
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView2"
+        android:layout_below="@+id/imageViewAdd"
+        android:layout_alignEnd="@+id/btnExerciseAdd"
+        android:layout_alignParentStart="true"
+        android:layout_above="@+id/btnCalcAdd" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Addition is a mathematical operation that represents the total amount of objects together in a collection. It is signified by the plus sign (+). For example, in the picture on the right, there are 3 + 2 apples—meaning three apples and two apples together, which is a total of 5 apples. Therefore, 3 + 2 = 5. Besides counting fruits, addition can also represent combining other physical and abstract quantities using different kinds of objects: negative numbers, fractions, irrational numbers, vectors, decimals, functions, matrices and more.
+
+Addition has several important properties. It is commutative, meaning that order does not matter, and it is associative, meaning that when one adds more than two numbers, the order in which addition is performed does not matter (see Summation). Repeated addition of 1 is the same as counting; addition of 0 does not change a number. Addition also obeys predictable rules concerning related operations such as subtraction and multiplication. All of these rules can be proven, starting with the addition of natural numbers and generalizing up through the real numbers and beyond. General binary operations that have similar properties are studied in abstract algebra.
+
+Performing addition is one of the simplest numerical tasks. Addition of very small numbers is accessible to toddlers; the most basic task, 1 + 1, can be performed by infants as young as five months and even some animals. In primary education, students are taught to add numbers in the decimal system, starting with single digits and progressively tackling more difficult problems. Mechanical aids range from the ancient abacus to the modern computer, where research on the most efficient implementations of addition continues to this day."/>
+
+
+
+    </ScrollView>
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Video"
+        android:id="@+id/btnVideoDiv"
+        android:layout_below="@+id/scrollView2"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

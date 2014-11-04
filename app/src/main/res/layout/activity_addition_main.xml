@@ -12,7 +12,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Addition"
+        android:text="Division"
         android:id="@+id/textViewAdd"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true" />
@@ -21,7 +21,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Calc"
-        android:id="@+id/btnCalc"
+        android:id="@+id/btnCalcAdd"
         android:layout_alignParentBottom="true"
         android:layout_alignParentStart="true" />
 
@@ -29,7 +29,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Exercise"
-        android:id="@+id/btnExercise"
+        android:id="@+id/btnExerciseAdd"
         android:layout_alignParentBottom="true"
         android:layout_alignParentEnd="true" />
 
@@ -37,18 +37,20 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/imageViewAdd"
-        android:layout_toStartOf="@+id/btnExercise"
-        android:src="@drawable/adc_foto"
-        android:layout_below="@+id/textViewAdd" />
+        android:layout_toStartOf="@+id/btnExerciseAdd"
+        android:src="@drawable/addition_cartoon"
+        android:layout_below="@+id/textViewAdd"
+        android:layout_alignEnd="@+id/scrollView2"
+        android:layout_alignParentStart="true" />
 
     <ScrollView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/scrollView2"
         android:layout_below="@+id/imageViewAdd"
-        android:layout_alignEnd="@+id/btnExercise"
+        android:layout_alignEnd="@+id/btnExerciseAdd"
         android:layout_alignParentStart="true"
-        android:layout_above="@+id/btnCalc" >
+        android:layout_above="@+id/btnCalcAdd" >
 
         <TextView
             android:layout_width="match_parent"
@@ -61,14 +63,14 @@ Performing addition is one of the simplest numerical tasks. Addition of very sma
 
 
 
-        </ScrollView>
+    </ScrollView>
 
     <Button
         style="?android:attr/buttonStyleSmall"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Video"
-        android:id="@+id/btnVideo"
+        android:id="@+id/btnVideoAdd"
         android:layout_below="@+id/scrollView2"
         android:layout_centerHorizontal="true" />
 

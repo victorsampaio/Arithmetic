@@ -6,12 +6,12 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingBottom="@dimen/activity_vertical_margin"
-    tools:context="android.com.arithmetic.operations.division.DivisionActivity">
+    tools:context="android.com.arithmetic.operations.multiplication.CalculateMultiplicationActivity">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Division"
+        android:text="Multiplication - Calculate"
         android:id="@+id/textViewAdd"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true" />
@@ -29,17 +29,17 @@
         android:layout_height="wrap_content"
         android:inputType="number"
         android:ems="10"
-        android:id="@+id/firstNumD"
+        android:id="@+id/firstN"
         android:layout_below="@+id/txtAdd"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Second Number"
         android:id="@+id/textView3"
-        android:layout_below="@+id/firstNumD"
+        android:layout_below="@+id/firstN"
         android:layout_alignParentStart="true" />
 
     <EditText
@@ -47,26 +47,27 @@
         android:layout_height="wrap_content"
         android:inputType="number"
         android:ems="10"
-        android:id="@+id/secondNumD"
+        android:id="@+id/secondN"
         android:layout_below="@+id/textView3"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Division"
-        android:id="@+id/btnDivision"
-        android:layout_below="@+id/secondNumD"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="50dp" />
+        android:text="Calculate"
+        android:id="@+id/btnMultip"
+        android:layout_below="@+id/secondN"
+        android:layout_alignParentStart="true" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:id="@+id/result"
-        android:layout_below="@+id/btnDivision"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="43dp" />
+        android:layout_toEndOf="@+id/textView3"
+        android:layout_alignBottom="@+id/btnMultip"
+        android:layout_marginLeft="45dp"
+        android:layout_alignEnd="@+id/textViewAdd" />
+
 </RelativeLayout>

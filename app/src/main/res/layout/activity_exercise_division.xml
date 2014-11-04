@@ -20,7 +20,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="9 + 3 ="
+        android:text="9 / 3 ="
         android:id="@+id/ex1"
         android:layout_alignBottom="@+id/r1"
         android:layout_alignParentStart="true" />
@@ -38,6 +38,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:text="New Text"
         android:id="@+id/resul1"
         android:layout_toEndOf="@+id/textViewExerc"
         android:layout_alignBottom="@+id/r1"
@@ -47,7 +48,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="4 + 2 = "
+        android:text="4 / 2 = "
         android:id="@+id/ex2"
         android:layout_toStartOf="@+id/r1"
         android:layout_below="@+id/resul1"
@@ -68,6 +69,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:text="New Text"
         android:id="@+id/resul2"
         android:layout_alignBottom="@+id/ex2"
         android:layout_alignStart="@+id/resul1" />
@@ -76,7 +78,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="8 + 2 = "
+        android:text="8 / 2 = "
         android:id="@+id/ex3"
         android:layout_below="@+id/resul2"
         android:layout_alignParentStart="true"
@@ -95,11 +97,10 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:text="New Text"
         android:id="@+id/resul3"
         android:layout_alignBottom="@+id/ex3"
-        android:layout_alignStart="@+id/resul2"
-        android:layout_alignTop="@+id/ex3"
-        android:layout_alignParentEnd="true" />
+        android:layout_alignStart="@+id/resul2" />
 
     <Button
         android:layout_width="wrap_content"

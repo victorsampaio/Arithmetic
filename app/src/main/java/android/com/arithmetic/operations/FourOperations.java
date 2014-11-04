@@ -1,10 +1,10 @@
 package android.com.arithmetic.operations;
 
 import android.app.ListActivity;
-import android.com.arithmetic.operations.division.DivisionActivity;
-import android.com.arithmetic.operations.multiplication.MultiplicationActivity;
-import android.com.arithmetic.operations.subtraction.SubtractionActivity;
-import android.com.arithmetic.operations.sum.SumActivity;
+import android.com.arithmetic.operations.addition.AdditionMainActivity;
+import android.com.arithmetic.operations.division.DivisionMainActivity;
+import android.com.arithmetic.operations.multiplication.MultiplicationMainActivity;
+import android.com.arithmetic.operations.subtraction.SubtractionMainActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
@@ -33,16 +33,16 @@ public class FourOperations extends ListActivity {
         // super.onListItemClick(l, v, position, id);
         switch (position){
             case 0:
-                startActivity(new Intent(this, SumActivity.class));
+                startActivity(new Intent(this, AdditionMainActivity.class));
                 break;
             case 1:
-                startActivity(new Intent(this, SubtractionActivity.class));
+                startActivity(new Intent(this, SubtractionMainActivity.class));
                 break;
             case 2:
-                startActivity(new Intent(this, DivisionActivity.class));
+                startActivity(new Intent(this, DivisionMainActivity.class));
                 break;
             case 3:
-                startActivity(new Intent(this, MultiplicationActivity.class));
+                startActivity(new Intent(this, MultiplicationMainActivity.class));
                 break;
             default:
                 finish();

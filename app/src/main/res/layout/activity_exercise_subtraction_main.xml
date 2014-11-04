@@ -11,7 +11,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Division - Exercise"
+        android:text="Subtraction - Exercise"
         android:id="@+id/textViewExerc"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true" />
@@ -20,10 +20,19 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="9 + 3 ="
-        android:id="@+id/ex1"
-        android:layout_alignBottom="@+id/r1"
+        android:text="3 - 1 ="
+        android:id="@+id/e1"
+        android:layout_below="@+id/textViewExerc"
         android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="7 - 3 ="
+        android:id="@+id/e2"
+        android:layout_below="@+id/r1"
+        android:layout_toStartOf="@+id/r1" />
 
     <EditText
         android:layout_width="wrap_content"
@@ -31,28 +40,10 @@
         android:inputType="number"
         android:ems="10"
         android:id="@+id/r1"
-        android:layout_toEndOf="@+id/ex1"
         android:layout_below="@+id/textViewExerc"
-        android:layout_toStartOf="@+id/resul1" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/resul1"
-        android:layout_toEndOf="@+id/textViewExerc"
-        android:layout_alignBottom="@+id/r1"
-        android:layout_alignParentEnd="true" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="4 + 2 = "
-        android:id="@+id/ex2"
-        android:layout_toStartOf="@+id/r1"
-        android:layout_below="@+id/resul1"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="23dp" />
+        android:layout_toEndOf="@+id/e1"
+        android:layout_toStartOf="@+id/textViewExerc"
+        android:layout_alignEnd="@+id/textViewExerc" />
 
     <EditText
         android:layout_width="wrap_content"
@@ -60,27 +51,19 @@
         android:inputType="number"
         android:ems="10"
         android:id="@+id/r2"
-        android:layout_toEndOf="@+id/ex2"
-        android:layout_alignBottom="@+id/resul2"
+        android:layout_alignTop="@+id/e2"
         android:layout_alignStart="@+id/r1"
+        android:layout_toStartOf="@+id/textViewExerc"
         android:layout_alignEnd="@+id/r1" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/resul2"
-        android:layout_alignBottom="@+id/ex2"
-        android:layout_alignStart="@+id/resul1" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="8 + 2 = "
-        android:id="@+id/ex3"
-        android:layout_below="@+id/resul2"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="23dp" />
+        android:text="9 - 5 ="
+        android:id="@+id/e3"
+        android:layout_below="@+id/r2"
+        android:layout_alignParentStart="true" />
 
     <EditText
         android:layout_width="wrap_content"
@@ -88,26 +71,40 @@
         android:inputType="number"
         android:ems="10"
         android:id="@+id/r3"
-        android:layout_toEndOf="@+id/ex3"
-        android:layout_alignBottom="@+id/resul3"
+        android:layout_below="@+id/r2"
+        android:layout_alignStart="@+id/r2"
+        android:layout_toStartOf="@+id/textViewExerc"
         android:layout_alignEnd="@+id/r2" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/resul3"
-        android:layout_alignBottom="@+id/ex3"
-        android:layout_alignStart="@+id/resul2"
-        android:layout_alignTop="@+id/ex3"
-        android:layout_alignParentEnd="true" />
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:id="@+id/txtR1"
+        android:layout_above="@+id/r2"
+        android:layout_toEndOf="@+id/textViewExerc" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtR2"
+        android:layout_above="@+id/r3"
+        android:layout_alignStart="@+id/txtR1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtR3"
+        android:layout_alignBottom="@+id/r3"
+        android:layout_alignStart="@+id/txtR2" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Result"
         android:id="@+id/btnResultExerc"
-        android:layout_centerVertical="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignEnd="@+id/r3" />
+        android:layout_marginTop="40dp"
+        android:layout_below="@+id/r3"
+        android:layout_alignParentStart="true" />
 
 </RelativeLayout>

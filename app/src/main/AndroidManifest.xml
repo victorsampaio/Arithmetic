@@ -2,7 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="android.com.arithmetic" >
 
-    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -23,33 +23,72 @@
             android:label="@string/title_activity_four_operations" >
         </activity>
         <activity
-            android:name=".operations.sum.SumActivity"
+            android:name=".operations.addition.AdditionMainActivity"
             android:label="@string/title_activity_sum" >
         </activity>
         <activity
-            android:name=".operations.subtraction.SubtractionActivity"
+            android:name=".operations.subtraction.SubtractionCalculateActivity"
             android:label="@string/title_activity_subtraction" >
         </activity>
         <activity
-            android:name=".operations.division.DivisionActivity"
+            android:name=".operations.division.CalculateDivisionActivity"
             android:label="@string/title_activity_division" >
         </activity>
         <activity
-            android:name=".operations.multiplication.MultiplicationActivity"
+            android:name=".operations.multiplication.CalculateMultiplicationActivity"
             android:label="@string/title_activity_multiplication" >
         </activity>
         <activity
-            android:name=".operations.sum.CalculateAddition"
+            android:name=".operations.addition.CalculateAdditionActivity"
             android:label="@string/title_activity_calculate_addition" >
         </activity>
         <activity
-            android:name=".operations.sum.ExerciseAddition"
+            android:name=".operations.addition.ExerciseAdditionActivity"
             android:label="@string/title_activity_exercise_addition" >
         </activity>
         <activity
-            android:name=".operations.sum.VideoClassAddActivity"
+            android:name=".operations.addition.VideoClassAdditionActivity"
             android:label="@string/title_activity_video_class_add" >
         </activity>
+        <activity
+            android:name=".operations.subtraction.SubtractionMainActivity"
+            android:label="@string/title_activity_subtraction_main" >
+        </activity>
+        <activity
+            android:name=".operations.subtraction.ExerciseSubtractionMainActivity"
+            android:label="@string/title_activity_exercise_subtraction_main" >
+        </activity>
+        <activity
+            android:name=".operations.subtraction.VideoClassSubtractionActivity"
+            android:label="@string/title_activity_video_subtraction" >
+        </activity>
+        <activity
+            android:name=".operations.multiplication.VideoClassMultiplicationActivity"
+            android:label="@string/title_activity_video_multiplication" >
+        </activity>
+        <activity
+            android:name=".operations.division.VideoClassDivisionActivity"
+            android:label="@string/title_activity_video_division" >
+        </activity>
+        <activity
+            android:name=".operations.division.ExerciseDivisionActivity"
+            android:label="@string/title_activity_exercise_division" >
+        </activity>
+        <activity
+            android:name=".operations.multiplication.ExerciseMultiplicationActvity"
+            android:label="@string/title_activity_exercise_multiplication_actvity" >
+        </activity>
+        <activity
+            android:name=".operations.multiplication.MultiplicationMainActivity"
+            android:label="@string/title_activity_multiplication_main" >
+        </activity>
+        <activity
+            android:name=".operations.division.DivisionMainActivity"
+            android:label="@string/title_activity_division_main" >
+        </activity>
+
     </application>
 
 </manifest>
+
+
